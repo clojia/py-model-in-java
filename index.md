@@ -75,12 +75,14 @@ with tf.Session() as sess:
         if epoch % display_step == 0:
             print("Epoch:", '%04d' % (epoch+1), "cost={:.9f}".format(avg_cost), "Train_accuracy={:.4f}".format(epoch_train_accuracy))
     print("Optimization Finished!")
-    builder.save()```
+    builder.save()
+```    
     
+   
+Then we will get folder:
     
-    Then we will get folder:
-    
-    ```admins-MacBook-Pro:tf_model chloe$ tree .
+```
+admins-MacBook-Pro:tf_model chloe$ tree .
 .
 ├── saved_model.pb
 └── variables
